@@ -102,14 +102,6 @@ const Header = () => {
           </li>
           <li className="mr-4">
             <a
-              href="/#services"
-              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
-            >
-              Services
-            </a>
-          </li>
-          <li className="mr-4">
-            <a
               href="/a-propos"
               className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
             >
@@ -137,9 +129,12 @@ const Header = () => {
       </div>
 
       {/* contact */}
-      <button className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100">
+      <a
+        href="/contact"
+        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100"
+      >
         Contactez-nous
-      </button>
+      </a>
     </header>
   );
 };

@@ -18,11 +18,13 @@ const PricingPage = () => {
       <div className="flex justify-center">
         <table className="w-full lg:w-2/3 border-collapse border border-gray-400">
           <thead>
-            <tr className="bg-gray-200">
-              <th className="py-2 px-4 border border-gray-400">
+            <tr className="bg-[#007EB1]">
+              <th className="py-2 px-4 border border-gray-400 text-white">
                 Type de Nettoyage
               </th>
-              <th className="py-2 px-4 border border-gray-400">Prix</th>
+              <th className="py-2 px-4 border border-gray-400 text-white">
+                Prix
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -60,7 +62,7 @@ const PricingPage = () => {
           Besoin de plus d'informations ? Contactez-nous dès maintenant pour un
           devis gratuit.
         </p>
-        <button className="bg-slate-100 hover:text-white py-2 px-4 rounded hover:bg-slate-600 text-slate-900">
+        <button className="bg-[#007EB1] py-2 px-4 rounded hover:bg-[#12A9D8] text-white font-bold">
           Contactez-nous
         </button>
       </div>
