@@ -1,6 +1,6 @@
 const Homepage = () => {
   return (
-    <div className="container w-full mx-auto py-8 bg-slate-100">
+    <div className="container w-full mx-auto py-8">
       <div className="border-b-2 m-4">
         {/* French Slogan */}
         <h1 className="text-3xl font-bold text-center mb-4">
