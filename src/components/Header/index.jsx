@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="text-white p-4 flex relative bg-slate-100">
+    <header className="text-white p-4 flex relative bg-slate-100 border-b-2">
       {/* Burger Menu for mobile Screens */}
       <div
         className="sm:hidden absolute top-4 left-4 text-slate-900"
