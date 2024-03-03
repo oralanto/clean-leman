@@ -30,7 +30,7 @@ const Header = () => {
       >
         {isMenuOpen ? (
           <svg
-            className="h-6 w-6 cursor-pointer"
+            className="size-6 cursor-pointer"
             fill="current"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -44,7 +44,7 @@ const Header = () => {
           </svg>
         ) : (
           <svg
-            className="h-6 w-6 cursor-pointer"
+            className="size-6 cursor-pointer"
             fill="current"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -59,31 +59,59 @@ const Header = () => {
         )}
       </div>
 
+      {/* Modal for Small Screens */}
+      {isMenuOpen && (
+        <div className="sm:hidden fixed top-0 left-0 w-full h-full bg-purple-900 bg-opacity-75 flex items-center justify-center z-50">
+          <ul className="text-white text-lg">
+            <li className="mb-4">
+              <a href="#home" onClick={toggleMenu}>
+                Accueil
+              </a>
+            </li>
+            <li className="mb-4">
+              <a href="#services" onClick={toggleMenu}>
+                Services
+              </a>
+            </li>
+            <li className="mb-4">
+              <a href="/a-propos" onClick={toggleMenu}>
+                À propos
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={toggleMenu}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+
       {/* Menu desktop */}
       <nav
         ref={menuRef}
         className={`hidden sm:block ${
           isMenuOpen ? "" : "hidden"
-        } w-full absolute top-4 left-4`}
+        } w-full absolute top-4 left-4 text-slate-900`}
       >
         <ul className="flex">
           <li className="mr-4">
-            <a href="#home" onClick={toggleMenu}>
+            <a href="/" className="hover:border-b-2 pb-1">
               Accueil
             </a>
           </li>
           <li className="mr-4">
-            <a href="#services" onClick={toggleMenu}>
+            <a href="/#services" className="hover:border-b-2 pb-1">
               Services
             </a>
           </li>
           <li className="mr-4">
-            <a href="#about" onClick={toggleMenu}>
+            <a href="/a-propos" className="hover:border-b-2 pb-1">
               À propos
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={toggleMenu}>
+            <a href="/contact" className="hover:border-b-2 pb-1">
               Contact
             </a>
           </li>
@@ -102,34 +130,6 @@ const Header = () => {
       >
         Contactez-nous
       </button>
-
-      {/* Modal for Small Screens */}
-      {isMenuOpen && (
-        <div className="sm:hidden fixed top-0 left-0 w-full h-full bg-purple-900 bg-opacity-75 flex items-center justify-center z-50">
-          <ul className="text-white text-lg">
-            <li className="mb-4">
-              <a href="#home" onClick={toggleMenu}>
-                Accueil
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#services" onClick={toggleMenu}>
-                Services
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#about" onClick={toggleMenu}>
-                À propos
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={toggleMenu}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
     </header>
   );
 };
