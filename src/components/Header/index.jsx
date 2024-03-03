@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="text-white p-4 flex relative bg-slate-100 border-b-2">
+    <header className="text-white p-4 flex relative border-b-2">
       {/* Burger Menu for mobile Screens */}
       <div
         className="sm:hidden absolute top-4 left-4 text-slate-900"
@@ -96,22 +96,34 @@ const Header = () => {
       >
         <ul className="flex">
           <li className="mr-4">
-            <a href="/" className="hover:border-b-2 pb-1">
+            <a
+              href="/"
+              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
+            >
               Accueil
             </a>
           </li>
           <li className="mr-4">
-            <a href="/#services" className="hover:border-b-2 pb-1">
+            <a
+              href="/#services"
+              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
+            >
               Services
             </a>
           </li>
           <li className="mr-4">
-            <a href="/a-propos" className="hover:border-b-2 pb-1">
+            <a
+              href="/a-propos"
+              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
+            >
               À propos
             </a>
           </li>
           <li>
-            <a href="/contact" className="hover:border-b-2 pb-1">
+            <a
+              href="/contact"
+              className="hover:border-b-2 hover:border-[#007EB1] pb-1"
+            >
               Contact
             </a>
           </li>
@@ -120,13 +132,17 @@ const Header = () => {
 
       {/* Logo */}
       <div className="w-full mx-auto my-24">
-        <img src="/images/products.png" alt="Logo" className="size-40 m-auto" />
+        <img
+          src="/images/clean_leman.png"
+          alt="Logo"
+          className="size-48 m-auto"
+        />
       </div>
 
       {/* contact */}
       <button
         ref={menuRef}
-        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-slate-500 hover:text-white hover:border-slate-100"
+        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100"
       >
         Contactez-nous
       </button>

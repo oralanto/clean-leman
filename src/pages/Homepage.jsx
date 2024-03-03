@@ -21,7 +21,7 @@ const Homepage = () => {
         {/* Service Card: Nettoyage Domicile */}
         <a
           href="/service-domicile"
-          className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
         >
           <h2 className="text-xl font-semibold mb-4">Nettoyage à Domicile</h2>
           <p className="mb-4">
@@ -33,7 +33,7 @@ const Homepage = () => {
         {/* Service Card: Nettoyage Voiture */}
         <a
           href="/service-voiture"
-          className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
         >
           <h2 className="text-xl font-semibold mb-4">Nettoyage de Voiture</h2>
           <p className="mb-4">
@@ -45,7 +45,7 @@ const Homepage = () => {
         {/* Service Card: Tarifs */}
         <a
           href="/service-tarifs"
-          className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
         >
           <h2 className="text-xl font-semibold mb-4">Tarifs</h2>
           <p className="mb-4">
