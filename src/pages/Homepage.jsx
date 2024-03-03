@@ -31,13 +31,16 @@ const Homepage = () => {
         </a>
 
         {/* Service Card: Nettoyage Voiture */}
-        <div className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0">
+        <a
+          href="/service-voiture"
+          className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0"
+        >
           <h2 className="text-xl font-semibold mb-4">Nettoyage de Voiture</h2>
           <p className="mb-4">
             Nous prenons soin de l'intérieur et de l'extérieur de votre voiture,
             y compris le shampoing des sièges et plus encore.
           </p>
-        </div>
+        </a>
 
         {/* Service Card: Tarifs */}
         <div className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0">
