@@ -43,14 +43,17 @@ const Homepage = () => {
         </a>
 
         {/* Service Card: Tarifs */}
-        <div className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0">
+        <a
+          href="/service-tarifs"
+          className="bg-white rounded-lg shadow-md p-6 mx-4 sm:m-0"
+        >
           <h2 className="text-xl font-semibold mb-4">Tarifs</h2>
           <p className="mb-4">
             Découvrez nos tarifs compétitifs pour le nettoyage intérieur,
             extérieur, à domicile, ainsi que la possibilité de demander un devis
             gratuit.
           </p>
-        </div>
+        </a>
       </section>
     </div>
   );

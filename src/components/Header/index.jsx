@@ -96,22 +96,12 @@ const Header = () => {
       </div>
 
       {/* contact */}
-      <nav
+      <button
         ref={menuRef}
-        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4"
+        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-slate-500 hover:text-white hover:border-slate-100"
       >
-        <ul className="flex">
-          <li>
-            <a
-              href="#contact"
-              onClick={toggleMenu}
-              className="font-bold text-slate-800"
-            >
-              Contactez-nous
-            </a>
-          </li>
-        </ul>
-      </nav>
+        Contactez-nous
+      </button>
 
       {/* Modal for Small Screens */}
       {isMenuOpen && (
