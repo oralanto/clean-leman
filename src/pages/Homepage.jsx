@@ -21,10 +21,11 @@ const Homepage = () => {
         {/* Service Card: Nettoyage Domicile */}
         <a
           href="/service-domicile"
-          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0 space-y-4"
         >
-          <h2 className="text-xl font-semibold mb-4">Nettoyage à Domicile</h2>
-          <p className="mb-4">
+          <h2 className="text-xl font-semibold ">Nettoyage à Domicile</h2>
+          <img src="/images/house_cleaning_1.jpeg" alt="cleaning car" />
+          <p className="">
             Nous offrons un nettoyage complet de votre domicile, y compris les
             tapis, les sanitaires, les canapés, et bien plus encore.
           </p>
@@ -33,10 +34,11 @@ const Homepage = () => {
         {/* Service Card: Nettoyage Voiture */}
         <a
           href="/service-voiture"
-          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0 space-y-4"
         >
-          <h2 className="text-xl font-semibold mb-4">Nettoyage de Voiture</h2>
-          <p className="mb-4">
+          <h2 className="text-xl font-semibold ">Nettoyage de Voiture</h2>
+          <img src="/images/car_cleaning_1.jpeg" alt="cleaning house" />
+          <p className="">
             Nous prenons soin de l'intérieur et de l'extérieur de votre voiture,
             y compris le shampoing des sièges et plus encore.
           </p>
@@ -45,10 +47,11 @@ const Homepage = () => {
         {/* Service Card: Tarifs */}
         <a
           href="/service-tarifs"
-          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0"
+          className="bg-white rounded-lg shadow-md hover:shadow-[#007EB1] p-6 mx-4 sm:m-0 space-y-4"
         >
-          <h2 className="text-xl font-semibold mb-4">Tarifs</h2>
-          <p className="mb-4">
+          <h2 className="text-xl font-semibold ">Tarifs</h2>
+          <img src="/images/tarifs.jpeg" alt="tarifs" />
+          <p className="">
             Découvrez nos tarifs compétitifs pour le nettoyage intérieur,
             extérieur, à domicile, ainsi que la possibilité de demander un devis
             gratuit.
