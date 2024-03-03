@@ -22,15 +22,49 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-purple-900 text-white p-4 flex items-center justify-between">
-      <div className="flex items-center">
-        <img src="/images/products.png" alt="Logo" className="h-8 mr-2" />
+    <header className="text-white p-4 flex relative bg-slate-100">
+      {/* Burger Menu for mobile Screens */}
+      <div
+        className="sm:hidden absolute top-4 left-4 text-slate-900"
+        onClick={toggleMenu}
+      >
+        {isMenuOpen ? (
+          <svg
+            className="h-6 w-6 cursor-pointer"
+            fill="current"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        ) : (
+          <svg
+            className="h-6 w-6 cursor-pointer"
+            fill="current"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        )}
       </div>
 
-      {/* Menu */}
+      {/* Menu desktop */}
       <nav
         ref={menuRef}
-        className={`hidden sm:block ${isMenuOpen ? "" : "hidden"}`}
+        className={`hidden sm:block ${
+          isMenuOpen ? "" : "hidden"
+        } w-full absolute top-4 left-4`}
       >
         <ul className="flex">
           <li className="mr-4">
@@ -56,38 +90,28 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Burger Menu for Small Screens */}
-      <div className="sm:hidden" onClick={toggleMenu}>
-        {isMenuOpen ? (
-          <svg
-            className="h-6 w-6 cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        ) : (
-          <svg
-            className="h-6 w-6 cursor-pointer"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        )}
+      {/* Logo */}
+      <div className="w-full mx-auto my-24">
+        <img src="/images/products.png" alt="Logo" className="size-40 m-auto" />
       </div>
+
+      {/* contact */}
+      <nav
+        ref={menuRef}
+        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4"
+      >
+        <ul className="flex">
+          <li>
+            <a
+              href="#contact"
+              onClick={toggleMenu}
+              className="font-bold text-slate-800"
+            >
+              Contactez-nous
+            </a>
+          </li>
+        </ul>
+      </nav>
 
       {/* Modal for Small Screens */}
       {isMenuOpen && (
