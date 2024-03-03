@@ -9,7 +9,11 @@ const Header = () => {
   };
 
   const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      !event.target.classList.contains("size-6")
+    ) {
       setIsMenuOpen(false);
     }
   };
@@ -60,32 +64,25 @@ const Header = () => {
       </div>
 
       {/* Modal for Small Screens */}
-      {isMenuOpen && (
-        <div className="sm:hidden fixed top-0 left-0 w-full h-full bg-purple-900 bg-opacity-75 flex items-center justify-center z-50">
-          <ul className="text-white text-lg">
-            <li className="mb-4">
-              <a href="#home" onClick={toggleMenu}>
-                Accueil
-              </a>
+      {isMenuOpen ? (
+        <div className="sm:hidden fixed top-0 left-0 size-48 bg-[#12A9D8] bg-opacity-85 flex justify-center items-center z-50 rounded-br-md">
+          <ul
+            ref={menuRef}
+            className="text-white text-lg font-bold"
+            onClick={handleClickOutside}
+          >
+            <li className="mb-4 hover:text-[#007EB1]">
+              <a href="/">Accueil</a>
             </li>
-            <li className="mb-4">
-              <a href="#services" onClick={toggleMenu}>
-                Services
-              </a>
+            <li className="mb-4 hover:text-[#007EB1]">
+              <a href="/a-propos">À propos</a>
             </li>
-            <li className="mb-4">
-              <a href="/a-propos" onClick={toggleMenu}>
-                À propos
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={toggleMenu}>
-                Contact
-              </a>
+            <li className="mb-4 hover:text-[#007EB1]">
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </div>
-      )}
+      ) : null}
 
       {/* Menu desktop */}
       <nav
@@ -140,10 +137,7 @@ const Header = () => {
       </div>
 
       {/* contact */}
-      <button
-        ref={menuRef}
-        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100"
-      >
+      <button className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100">
         Contactez-nous
       </button>
     </header>
