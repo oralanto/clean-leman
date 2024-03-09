@@ -19,7 +19,7 @@ const CarCleaningServicePage = () => {
         {/* Service Image */}
         <div>
           <img
-            src="/images/car_cleaning.jpg"
+            src="/images/car-cleaning.jpeg"
             alt="Nettoyage de Voiture"
             className="w-full rounded-lg shadow-md"
           />
@@ -28,7 +28,7 @@ const CarCleaningServicePage = () => {
         {/* Service Features */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Nos Services Inclus</h2>
-          <ul className="list-disc pl-4">
+          <ul className="list-disc pl-4 text-left">
             <li>Nettoyage en profondeur de l'intérieur du véhicule</li>
             <li>
               Nettoyage complet de l'extérieur y compris la carrosserie et les
@@ -46,9 +46,12 @@ const CarCleaningServicePage = () => {
       {/* Call to Action */}
       <div className="text-center mt-8">
         <p className="mb-4">Envie d'une voiture impeccable ?</p>
-        <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+        <a
+          href="contact"
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
           Contactez-nous dès maintenant
-        </button>
+        </a>
       </div>
     </div>
   );
