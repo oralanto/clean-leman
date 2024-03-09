@@ -26,7 +26,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="text-white p-4 flex relative border-b-2">
+    <header
+      className="text-white p-4 flex relative border-b-2 bg-no-repeat bg-center bg-local bg-cover"
+      style={{ backgroundImage: "url('/images/background-home.jpeg')" }}
+    >
       {/* Burger Menu for mobile Screens */}
       <div
         className="sm:hidden absolute top-4 left-4 text-slate-900"
@@ -89,13 +92,13 @@ const Header = () => {
         ref={menuRef}
         className={`hidden sm:block ${
           isMenuOpen ? "" : "hidden"
-        } w-full absolute top-4 left-4 text-slate-900`}
+        } w-full absolute top-4 left-4 text-white text-xl font-bold`}
       >
         <ul className="flex">
           <li className="mr-4">
             <a
               href="/"
-              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
+              className="hover:border-b-4 hover:border-[#007EB1]  pb-1"
             >
               Accueil
             </a>
@@ -103,7 +106,7 @@ const Header = () => {
           <li className="mr-4">
             <a
               href="/a-propos"
-              className="hover:border-b-2 hover:border-[#007EB1]  pb-1"
+              className="hover:border-b-4 hover:border-[#007EB1]  pb-1"
             >
               À propos
             </a>
@@ -111,7 +114,7 @@ const Header = () => {
           <li>
             <a
               href="/contact"
-              className="hover:border-b-2 hover:border-[#007EB1] pb-1"
+              className="hover:border-b-4 hover:border-[#007EB1] pb-1"
             >
               Contact
             </a>
@@ -128,12 +131,12 @@ const Header = () => {
         />
       </div>
 
-      {/* contact */}
+      {/* Tarifs */}
       <a
-        href="/contact"
-        className="absolute bottom-4 right-4 border-2 border-gray-600 rounded-lg p-4 text-slate-900 hover:bg-[#007EB1] hover:text-white hover:border-slate-100"
+        href="/service-tarifs"
+        className="absolute bottom-4 right-4 border-2 border-white rounded-lg p-4 hover:bg-[#007EB1] text-white font-bold text-xl"
       >
-        Contactez-nous
+        Nos tarifs
       </a>
     </header>
   );

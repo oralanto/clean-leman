@@ -62,9 +62,12 @@ const PricingPage = () => {
           Besoin de plus d'informations ? Contactez-nous dès maintenant pour un
           devis gratuit.
         </p>
-        <button className="bg-[#007EB1] py-2 px-4 rounded hover:bg-[#12A9D8] text-white font-bold">
+        <a
+          href="contact"
+          className="bg-[#007EB1] py-2 px-4 rounded hover:bg-[#12A9D8] text-white font-bold"
+        >
           Contactez-nous
-        </button>
+        </a>
       </div>
     </div>
   );

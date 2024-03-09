@@ -20,10 +20,11 @@ const AboutPage = () => {
           garantir la satisfaction de nos clients.
         </p>
         <p className="mb-4">
-          Chez [Nom de l'entreprise], nous croyons en l'importance de la
-          propreté et de l'hygiène pour un environnement de vie et de travail
-          sain. C'est pourquoi nous nous engageons à fournir des services de
-          nettoyage fiables et efficaces, adaptés à vos besoins spécifiques.
+          Chez Clean Leman, nous croyons en l'importance de la propreté et de
+          l'hygiène pour un environnement de vie et de travail sain. C'est
+          pourquoi nous nous engageons à fournir des services de nettoyage
+          fiables et efficaces, adaptés à vos besoins spécifiques. Nous
+          intervenons sur le secteur du Grand Genève et ses alentours.
         </p>
         <p className="mb-4">
           Contactez-nous dès aujourd'hui pour en savoir plus sur nos services ou

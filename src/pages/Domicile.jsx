@@ -19,7 +19,7 @@ const DomicileServicePage = () => {
         {/* Service Image */}
         <div>
           <img
-            src="/images/home_cleaning.jpeg"
+            src="/images/canape-tapis-matelas.jpeg"
             alt="Nettoyage à Domicile"
             className="w-full rounded-lg shadow-md"
           />
@@ -45,9 +45,12 @@ const DomicileServicePage = () => {
       {/* Call to Action */}
       <div className="text-center mt-8">
         <p className="mb-4">Besoin d'un nettoyage à domicile de qualité ?</p>
-        <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+        <a
+          href="/contact"
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
           Contactez-nous dès maintenant
-        </button>
+        </a>
       </div>
     </div>
   );
