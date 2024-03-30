@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Homepage from "./pages/Homepage";
 import Domicile from "./pages/Domicile";
 import Voiture from "./pages/Voiture";
-import Tarifs from "./pages/Tarifs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
@@ -16,12 +15,11 @@ const App = () => {
     <div className="App flex flex-col justify-between h-screen">
       <Router>
         <Header />
-        <main className="w-full">
+        <main className="w-full font-mono">
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/service-domicile" element={<Domicile />} />
             <Route path="/service-voiture" element={<Voiture />} />
-            <Route path="/service-tarifs" element={<Tarifs />} />
             <Route path="/a-propos" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

@@ -1,8 +1,31 @@
 import React from "react";
+import FormuleCard from "../components/FormuleCard";
+
+const car = [
+  {
+    title: "Nettoyage intérieur",
+    description: "Nettoyage complet de l'intérieur de la voiture",
+    price: ["- Citadine: 100 chf", "- Berline: 120 chf", "- SUV: 140 chf"],
+  },
+  {
+    title: "Nettoyage extérieur",
+    description: "Nettoyage complet de l'extérieur de la voiture",
+    price: ["- Citadine: 40 chf", "- Berline: 60 chf", "- SUV: 60 chf"],
+  },
+  {
+    title: "Au détail",
+    description: "",
+    price: [
+      "- Nettoyage poils d'animaux: 30 chf",
+      "- Shampoing: 20 chf/siège",
+      "- Voiture avec vomi ou très sale: +30 chf",
+    ],
+  },
+];
 
 const CarCleaningServicePage = () => {
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 p-4 md:p-8">
       {/* Service Title */}
       <h1 className="text-3xl font-bold text-center mb-4">
         Service de Nettoyage de Voiture
@@ -15,32 +38,15 @@ const CarCleaningServicePage = () => {
       </p>
 
       {/* Service Details */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Service Image */}
-        <div>
-          <img
-            src="/images/car-cleaning.jpeg"
-            alt="Nettoyage de Voiture"
-            className="w-full rounded-lg shadow-md"
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {car.map(({ title, description, price }, index) => (
+          <FormuleCard
+            key={index}
+            title={title}
+            description={description}
+            price={price}
           />
-        </div>
-
-        {/* Service Features */}
-        <div>
-          <h2 className="text-xl font-semibold mb-4">Nos Services Inclus</h2>
-          <ul className="list-disc pl-4 text-left">
-            <li>Nettoyage en profondeur de l'intérieur du véhicule</li>
-            <li>
-              Nettoyage complet de l'extérieur y compris la carrosserie et les
-              vitres
-            </li>
-            <li>Shampoing des sièges, tapis et moquettes</li>
-            <li>Polissage de la carrosserie pour une brillance éclatante</li>
-            <li>Protection extérieure pour une durabilité accrue</li>
-            <li>Nettoyage et lustrage des jantes et des pneus</li>
-            {/* Add more service features as needed */}
-          </ul>
-        </div>
+        ))}
       </div>
 
       {/* Call to Action */}

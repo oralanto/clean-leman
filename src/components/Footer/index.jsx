@@ -1,14 +1,14 @@
 import React from "react";
-import LittleLogo from "../LittleLogo";
+import Logo from "../Logo";
 
 const Footer = () => {
   return (
     <footer
-      className="footer grid grid-cols-2 border-t-2 py
+      className="footer flex justify-evenly border-t-2 py
     -4 h-max w-full"
     >
-      <div className="footer__logo flex flex-col items-center">
-        <LittleLogo />
+      <div className="footer__logo flex flex-col items-center size-24">
+        <Logo />
       </div>
 
       <div className="footer__info flex flex-col justify-center">
