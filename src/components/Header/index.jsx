@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className="text-white p-4 flex relative border-b-2 bg-no-repeat bg-center bg-local bg-cover h-fit"
+      className="text-white p-4 flex relative border-b-2 bg-center bg-cover"
       style={{ backgroundImage: "url('/images/background-home.jpeg')" }}
     >
       {/* Burger Menu for mobile Screens */}
@@ -124,7 +124,7 @@ const Header = () => {
       </nav>
 
       {/* Logo */}
-      <div className="w-full mx-auto my-24 size-48 inline-flex items-center justify-center">
+      <div className="mx-auto my-24 size-[500px] inline-flex justify-center">
         <Logo />
       </div>
 

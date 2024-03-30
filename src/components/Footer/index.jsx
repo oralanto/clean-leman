@@ -1,4 +1,5 @@
 import React from "react";
+import LittleLogo from "../LittleLogo";
 
 const Footer = () => {
   return (
@@ -7,11 +8,7 @@ const Footer = () => {
     -4 h-max w-full"
     >
       <div className="footer__logo flex flex-col items-center">
-        <img
-          src="/images/clean_leman.png"
-          alt="Clean Leman"
-          className="size-24"
-        />
+        <LittleLogo />
       </div>
 
       <div className="footer__info flex flex-col justify-center">
