@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import Logo from "../Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className="text-white p-4 flex relative border-b-2 bg-no-repeat bg-center bg-local bg-cover"
+      className="text-white p-4 flex relative border-b-2 bg-no-repeat bg-center bg-local bg-cover h-fit"
       style={{ backgroundImage: "url('/images/background-home.jpeg')" }}
     >
       {/* Burger Menu for mobile Screens */}
@@ -123,12 +124,8 @@ const Header = () => {
       </nav>
 
       {/* Logo */}
-      <div className="w-full mx-auto my-24">
-        <img
-          src="/images/clean_leman.png"
-          alt="Logo"
-          className="size-48 m-auto"
-        />
+      <div className="w-full mx-auto my-24 size-48 inline-flex items-center justify-center">
+        <Logo />
       </div>
 
       {/* Tarifs */}
