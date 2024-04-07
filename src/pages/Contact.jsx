@@ -21,6 +21,7 @@ const Contact = () => {
               src="/images/facebook.svg"
               alt="facebook clean leman"
               className="size-12"
+              loading="lazy"
             />
           </a>
           <a
@@ -32,6 +33,7 @@ const Contact = () => {
               src="/images/instagram.svg"
               alt="instagram clean.leman clean leman"
               className="size-12"
+              loading="lazy"
             />
           </a>
         </div>

@@ -31,6 +31,7 @@ const Homepage = () => {
               src="/images/canape-tapis-matelas.jpeg"
               alt="cleaning car, nettoyage voiture, intérieur, extérieur à domicile"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
+              loading="lazy"
             />
           </div>
           <p>
@@ -49,6 +50,7 @@ const Homepage = () => {
               src="/images/car-cleaning.jpeg"
               alt="cleaning house, nettoyage maison à domicile, canapé, tapis, matelas"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
+              loading="lazy"
             />
           </div>
           <p>
@@ -76,6 +78,7 @@ const Homepage = () => {
               src="/images/facebook.svg"
               alt="facebook clean leman"
               className="size-12"
+              loading="lazy"
             />
           </a>
           <a
@@ -87,6 +90,7 @@ const Homepage = () => {
               src="/images/instagram.svg"
               alt="instagram clean.leman clean leman"
               className="size-12"
+              loading="lazy"
             />
           </a>
         </div>
