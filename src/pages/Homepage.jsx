@@ -29,7 +29,7 @@ const Homepage = () => {
           <div className="overflow-hidden">
             <img
               src="/images/canape-tapis-matelas.jpeg"
-              alt="cleaning car"
+              alt="cleaning car, nettoyage voiture, intérieur, extérieur à domicile"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
             />
           </div>
@@ -47,7 +47,7 @@ const Homepage = () => {
           <div className="overflow-hidden">
             <img
               src="/images/car-cleaning.jpeg"
-              alt="cleaning house"
+              alt="cleaning house, nettoyage maison à domicile, canapé, tapis, matelas"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
             />
           </div>
@@ -74,7 +74,7 @@ const Homepage = () => {
           >
             <img
               src="/images/facebook.svg"
-              alt="facebook"
+              alt="facebook clean leman"
               className="size-12"
             />
           </a>
@@ -85,7 +85,7 @@ const Homepage = () => {
           >
             <img
               src="/images/instagram.svg"
-              alt="instagram"
+              alt="instagram clean.leman clean leman"
               className="size-12"
             />
           </a>

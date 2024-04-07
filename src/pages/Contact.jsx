@@ -19,7 +19,7 @@ const Contact = () => {
           >
             <img
               src="/images/facebook.svg"
-              alt="facebook"
+              alt="facebook clean leman"
               className="size-12"
             />
           </a>
@@ -30,7 +30,7 @@ const Contact = () => {
           >
             <img
               src="/images/instagram.svg"
-              alt="instagram"
+              alt="instagram clean.leman clean leman"
               className="size-12"
             />
           </a>
