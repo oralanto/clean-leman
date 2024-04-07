@@ -3,10 +3,7 @@ import Logo from "../Logo";
 
 const Footer = () => {
   return (
-    <footer
-      className="footer flex justify-evenly border-t-2 py
-    -4 h-max w-full"
-    >
+    <footer className="footer flex justify-evenly border-t-2 py-4 h-max w-full">
       <div className="footer__logo flex flex-col items-center size-24">
         <Logo />
       </div>

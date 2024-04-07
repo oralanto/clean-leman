@@ -13,7 +13,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div className="App flex flex-col justify-between h-screen">
+    <div className="App flex flex-col justify-between h-screen w-screen">
       <Router>
         <Header />
         <main className="w-full font-mono">
