@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__info flex flex-col justify-center">
-        <p>Adresse: Rue de la propreté 123, Genève</p>
+        <p>Rue de la propreté 123, Genève</p>
         <p>Tel: +1234567890</p>
       </div>
     </footer>
