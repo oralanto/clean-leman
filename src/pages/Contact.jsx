@@ -5,15 +5,15 @@ const Contact = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-semibold mb-4">Contact</h1>
       <div className="mb-12">
-        <a href="mailto:cleanleman@contact.com">
-          Email: cleanleman@contact.com
-        </a>
+        <a href="mailto:contact@cleanleman.ch">Email: contact@cleanleman.ch</a>
+        {/* TODO: Add phone number */}
         <p>Téléphone: 079 123 45 67</p>
       </div>
+
       <div className="m-4 w-full">
         <div className="flex space-x-8 m-auto justify-center items-center">
           <a
-            href="https://www.facebook.com/cleanleman"
+            href="https://www.facebook.com/profile.php?id=61557931702302"
             target="_blank"
             rel="noreferrer"
           >
@@ -24,7 +24,7 @@ const Contact = () => {
             />
           </a>
           <a
-            href="https://www.instagram.com/cleanleman/"
+            href="https://www.instagram.com/clean.leman/"
             target="_blank"
             rel="noreferrer"
           >
@@ -32,17 +32,6 @@ const Contact = () => {
               src="/images/instagram.svg"
               alt="instagram"
               className="size-12"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/cleanleman/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/images/linkedin.svg"
-              alt="linkedin"
-              className="size-16"
             />
           </a>
         </div>

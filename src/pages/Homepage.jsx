@@ -66,9 +66,9 @@ const Homepage = () => {
         </p>
       </div>
       <div className="m-4 w-full">
-        <div className="flex space-x-8 m-auto justify-evenly items-center">
+        <div className="flex space-x-8 m-auto justify-center items-center">
           <a
-            href="https://www.facebook.com/cleanleman"
+            href="https://www.facebook.com/profile.php?id=61557931702302"
             target="_blank"
             rel="noreferrer"
           >
@@ -79,7 +79,7 @@ const Homepage = () => {
             />
           </a>
           <a
-            href="https://www.instagram.com/cleanleman/"
+            href="https://www.instagram.com/clean.leman/"
             target="_blank"
             rel="noreferrer"
           >
@@ -87,17 +87,6 @@ const Homepage = () => {
               src="/images/instagram.svg"
               alt="instagram"
               className="size-12"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/cleanleman/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/images/linkedin.svg"
-              alt="linkedin"
-              className="size-16"
             />
           </a>
         </div>
