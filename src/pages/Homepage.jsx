@@ -29,8 +29,9 @@ const Homepage = () => {
           <div className="overflow-hidden">
             <img
               src="/images/canape-tapis-matelas.jpeg"
-              alt="cleaning car"
+              alt="cleaning car, nettoyage voiture, intérieur, extérieur à domicile"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
+              loading="lazy"
             />
           </div>
           <p>
@@ -47,8 +48,9 @@ const Homepage = () => {
           <div className="overflow-hidden">
             <img
               src="/images/car-cleaning.jpeg"
-              alt="cleaning house"
+              alt="cleaning house, nettoyage maison à domicile, canapé, tapis, matelas"
               className="size-80 mx-auto object-cover hover:scale-105 transition duration-300 ease-in-out"
+              loading="lazy"
             />
           </div>
           <p>
@@ -66,38 +68,29 @@ const Homepage = () => {
         </p>
       </div>
       <div className="m-4 w-full">
-        <div className="flex space-x-8 m-auto justify-evenly items-center">
+        <div className="flex space-x-8 m-auto justify-center items-center">
           <a
-            href="https://www.facebook.com/cleanleman"
+            href="https://www.facebook.com/profile.php?id=61557931702302"
             target="_blank"
             rel="noreferrer"
           >
             <img
               src="/images/facebook.svg"
-              alt="facebook"
+              alt="facebook clean leman"
               className="size-12"
+              loading="lazy"
             />
           </a>
           <a
-            href="https://www.instagram.com/cleanleman/"
+            href="https://www.instagram.com/clean.leman/"
             target="_blank"
             rel="noreferrer"
           >
             <img
               src="/images/instagram.svg"
-              alt="instagram"
+              alt="instagram clean.leman clean leman"
               className="size-12"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/cleanleman/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="/images/linkedin.svg"
-              alt="linkedin"
-              className="size-16"
+              loading="lazy"
             />
           </a>
         </div>
