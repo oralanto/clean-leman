@@ -1,8 +1,47 @@
 import React from "react";
+import FormuleCard from "../components/FormuleCard";
+
+const domicile = [
+  {
+    title: "Tapis",
+    description: "Nettoyage de vos tapis en profondeur",
+    price: ["30 chf/m²"],
+  },
+  {
+    title: "Fauteuils",
+    description: "Nettoyage de vos fauteuils en profondeur",
+    price: ["60 chf"],
+  },
+  {
+    title: "Canapé 3 places",
+    description: "Nettoyage de vos canapés en profondeur",
+    price: ["120 chf"],
+  },
+  {
+    title: "Canapé 5 places",
+    description: "Nettoyage de vos canapés en profondeur",
+    price: ["150 chf"],
+  },
+  {
+    title: "Canapé XL",
+    description: "Nettoyage de vos canapés en profondeur",
+    price: ["210 chf"],
+  },
+  {
+    title: "Matelas une place",
+    description: "Nettoyage de vos matelas en profondeur, une ou deux faces",
+    price: ["1 face: 60 chf", "2 faces: 100 chf"],
+  },
+  {
+    title: "Matelas deux places",
+    description: "Nettoyage de vos matelas en profondeur, une ou deux faces",
+    price: ["1 face: 100 chf", "2 faces: 170 chf"],
+  },
+];
 
 const DomicileServicePage = () => {
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-4 md:p-8">
       {/* Service Title */}
       <h1 className="text-3xl font-bold text-center mb-4">
         Service de Nettoyage à Domicile
@@ -10,36 +49,21 @@ const DomicileServicePage = () => {
 
       {/* Service Description */}
       <p className="text-lg text-center mb-8">
-        Notre service de nettoyage à domicile offre une solution complète pour
-        rendre votre espace de vie impeccable et agréable à vivre.
+        Libérez-vous des corvées ménagères et économisez temps et argent avec
+        notre service de nettoyage à domicile. Votre espace retrouve sa
+        splendeur sans que vous ayez à vous soucier de rien d'autre !
       </p>
 
-      {/* Service Details */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Service Image */}
-        <div>
-          <img
-            src="/images/canape-tapis-matelas.jpeg"
-            alt="Nettoyage à Domicile"
-            className="w-full rounded-lg shadow-md"
+      {/* Service Features */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {domicile.map(({ title, description, price, secondPrice }, index) => (
+          <FormuleCard
+            key={index}
+            title={title}
+            description={description}
+            price={price}
           />
-        </div>
-
-        {/* Service Features */}
-        <div>
-          <h2 className="text-xl font-semibold mb-4">Nos Services Inclus</h2>
-          <ul className="list-disc pl-4 flex flex-col items-start">
-            <li>Nettoyage complet des tapis et moquettes</li>
-            <li>Sanitaires impeccables et désinfectés</li>
-            <li>
-              Nettoyage en profondeur des canapés et des meubles rembourrés
-            </li>
-            <li>Dépoussiérage minutieux des surfaces</li>
-            <li>Nettoyage des vitres et des miroirs</li>
-            <li>Aspiration et lavage des sols</li>
-            {/* Add more service features as needed */}
-          </ul>
-        </div>
+        ))}
       </div>
 
       {/* Call to Action */}

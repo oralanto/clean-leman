@@ -1,17 +1,14 @@
 import React from "react";
+import Logo from "../Logo";
 
 const Footer = () => {
   return (
     <footer
-      className="footer grid grid-cols-2 border-t-2 py
+      className="footer flex justify-evenly border-t-2 py
     -4 h-max w-full"
     >
-      <div className="footer__logo flex flex-col items-center">
-        <img
-          src="/images/clean_leman.png"
-          alt="Clean Leman"
-          className="size-24"
-        />
+      <div className="footer__logo flex flex-col items-center size-24">
+        <Logo />
       </div>
 
       <div className="footer__info flex flex-col justify-center">

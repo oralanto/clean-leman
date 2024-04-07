@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import Logo from "../Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className="text-white p-4 flex relative border-b-2 bg-no-repeat bg-center bg-local bg-cover"
+      className="text-white p-4 flex relative border-b-2 bg-center bg-cover"
       style={{ backgroundImage: "url('/images/background-home.jpeg')" }}
     >
       {/* Burger Menu for mobile Screens */}
@@ -92,7 +93,7 @@ const Header = () => {
         ref={menuRef}
         className={`hidden sm:block ${
           isMenuOpen ? "" : "hidden"
-        } w-full absolute top-4 left-4 text-white text-xl font-bold`}
+        } absolute top-4 left-8 text-white text-xl font-bold`}
       >
         <ul className="flex">
           <li className="mr-4">
@@ -123,21 +124,9 @@ const Header = () => {
       </nav>
 
       {/* Logo */}
-      <div className="w-full mx-auto my-24">
-        <img
-          src="/images/clean_leman.png"
-          alt="Logo"
-          className="size-48 m-auto"
-        />
+      <div className="mx-auto my-24 size-[500px] inline-flex justify-center">
+        <Logo width={500} height={500} />
       </div>
-
-      {/* Tarifs */}
-      <a
-        href="/service-tarifs"
-        className="absolute bottom-4 right-4 border-2 border-white rounded-lg p-4 hover:bg-[#007EB1] text-white font-bold text-xl"
-      >
-        Nos tarifs
-      </a>
     </header>
   );
 };

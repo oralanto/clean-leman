@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 px-4 lg:px-8">
       {/* Title */}
       <h1 className="text-3xl font-bold text-center mb-4">À Propos de Nous</h1>
 
